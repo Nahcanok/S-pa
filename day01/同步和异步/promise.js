@@ -1,3 +1,4 @@
+//为了避免回调金字塔，使用了promise
 function a() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

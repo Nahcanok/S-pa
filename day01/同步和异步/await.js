@@ -27,6 +27,7 @@ function c() {
     })
 }
 console.log(0);
+//await和promise差不多，都是为了避免回调金字塔
 ;(async () => {
     // a执行完再执行b,b执行完再执行c
     await a();

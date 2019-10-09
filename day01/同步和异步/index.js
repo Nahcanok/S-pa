@@ -8,7 +8,7 @@ function b(callback) {
     //如果异步没有callback将会没有意义
     setTimeout(() => {
         console.log("b");
-        callback()
+        // callback()
         setTimeout(() => {
             console.log("c");
             setTimeout(() => {
@@ -19,5 +19,6 @@ function b(callback) {
         }, 1000)
     }, 1000)
 }
+//回调金字塔（回调嵌套）
 b()
 a()

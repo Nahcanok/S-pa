@@ -4,5 +4,5 @@ module.exports = {
     plus(a,b){
         return a+b;
     }
-    
 }
+//导出一个自定义模块

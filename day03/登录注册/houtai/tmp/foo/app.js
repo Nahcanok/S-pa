@@ -6,8 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/sign')
-
+//设置对应的1路由模块
+var loginRouter = require('./routes/sign');
 var app = express();
 
 // view engine setup
@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/sign', loginRouter);
+//登录的路由
+app.use('/sign',loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

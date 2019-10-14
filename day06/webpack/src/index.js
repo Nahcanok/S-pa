@@ -1,5 +1,6 @@
 var $ = require('jquery')
 // var express = require('express')
 // var fs = require('fs')
+const css = require('../src/1.css')
 $('body').html('hello world')
 console.log('hello world')

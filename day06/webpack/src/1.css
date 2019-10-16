@@ -1,3 +1,16 @@
-body{
+#bg{
+    width: 100%;
+    height: 800px;
+}
+.showBox{
+    width: 100%;
+    height: 400px;
     background: #000;
+    transition: .5s;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background:rgba(0,0,0,0.6);
 }
